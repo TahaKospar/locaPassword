@@ -1,16 +1,73 @@
-# locapass
+locaPassword 🔐
+A secure, completely offline local password manager built with Flutter. locaPassword ensures absolute data privacy by storing user credentials exclusively on the local device, utilizing efficient serialization and local caching layers without relying on any external servers.
 
-A new Flutter project.
+🚀 Key Features
+Local Authentication: Multi-stage security including onboarding setup (setPass) and passcode verification (enterPass) on launch.
 
-## Getting Started
+Reactive State Management: Powered by Cubit (Flutter BLoC) to decouple business logic from the UI and ensure reliable state transitions.
 
-This project is a starting point for a Flutter application.
+Secure Offline Storage: Built-in credentials caching using persistent local key-value storage.
 
-A few resources to get you started if this is your first Flutter project:
+Full CRUD Operations: Seamless workflow to create (addData), read/search, update (editData), and delete credentials through a clean interface.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Automated Data Serialization: Custom serialization logic translating credentials into persistent models.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🛠️ Architecture & Tech Stack
+Framework: Flutter & Dart
+
+State Management: Flutter BLoC / Cubit
+
+Local Persistence: Shared Preferences (JSON String Caching)
+
+📁 Codebase Structure
+The project follows a clean, decoupled layer approach:
+
+Plaintext
+lib/
+├── Screens/               
+│   ├── WelcomeScreen.dart 
+│   ├── setPass.dart       
+│   ├── enterPass.dart     
+│   ├── homePage.dart      
+│   ├── addData.dart       
+│   └── editData.dart      
+│
+├── data/                  
+│   ├── cubitAuth/         
+│   │   ├── auth_cubit.dart
+│   │   └── auth_state.dart
+│   └── cubitPass/         
+│       ├── passwords_cubit.dart
+│       └── passwords_state.dart
+│
+├── logic/                 
+│   └── textField.dart     
+└── main.dart              
+📦 Dependencies Used
+Here are the core packages utilized in this production:
+
+flutter_bloc: For clean, predictable state management.
+
+shared_preferences: To securely persist encoded master authentication and credential sets offline.
+
+⚙️ Installation & Setup
+Follow these steps to run the project locally:
+
+Clone the Repository:
+
+Bash
+git clone https://github.com/TahaKospar/locaPassword.git
+Navigate to Project Directory:
+
+Bash
+cd locaPassword
+Install Dependencies:
+
+Bash
+flutter pub get
+Run the Application:
+
+Bash
+flutter run
+📄 License
+This project is open-source and available under the MIT License.
