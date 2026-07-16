@@ -16,11 +16,12 @@ A secure, completely offline local password manager built with Flutter. locaPass
 
 ## 🖼️ Project Visuals
 
-| 🔐 Authentication | 🏠 Home & Search | ➕ Manage Data |
+| Onboarding & Auth | Home & Vault | Actions & Search |
 | :---: | :---: | :---: |
-| ![Auth](screenshots/1.png) | ![Home](screenshots/4.png) | ![Add](screenshots/7.png) |
-| ![Setup](screenshots/2.png) | ![Search](screenshots/5.png) | ![Edit](screenshots/9.png) |
-
+| ![Auth](screenshots/1.png) | ![Home](screenshots/7.png) | ![Search](screenshots/9.png) |
+| ![Setup](screenshots/2.png) | ![List](screenshots/8.png) | ![Add](screenshots/11.png) |
+| ![Easy](screenshots/3.png) | ![Vault](screenshots/10.png) | ![Unlock](screenshots/12.png) |
+| ![Get](screenshots/4.png) | ![Set](screenshots/5.png) | ![Confirm](screenshots/6.png) |
 ---
 
 ## 🛠️ Architecture & Tech Stack
