@@ -1,24 +1,35 @@
-locaPassword 🔐
+# locaPassword 🔐
+
 A secure, completely offline local password manager built with Flutter. locaPassword ensures absolute data privacy by storing user credentials exclusively on the local device, utilizing efficient serialization and local caching layers without relying on any external servers.
 
-🚀 Key Features
-Local Authentication: Multi-stage security including onboarding setup (setPass) and passcode verification (enterPass) on launch.
+---
 
-Reactive State Management: Powered by Cubit (Flutter BLoC) to decouple business logic from the UI and ensure reliable state transitions.
+## 🚀 Key Features
 
-Secure Offline Storage: Built-in credentials caching using persistent local key-value storage.
+*   **Local Authentication:** Multi-stage security including onboarding setup (setPass) and passcode verification (enterPass) on launch.
+*   **Reactive State Management:** Powered by Cubit (Flutter BLoC) to decouple business logic from the UI and ensure reliable state transitions.
+*   **Secure Offline Storage:** Built-in credentials caching using persistent local key-value storage.
+*   **Full CRUD Operations:** Seamless workflow to create (addData), read/search, update (editData), and delete credentials through a clean interface.
+*   **Automated Data Serialization:** Custom serialization logic translating credentials into persistent models.
 
-Full CRUD Operations: Seamless workflow to create (addData), read/search, update (editData), and delete credentials through a clean interface.
+---
 
-Automated Data Serialization: Custom serialization logic translating credentials into persistent models.
+## 🖼️ Project Visuals
 
-🛠️ Architecture & Tech Stack
-Framework: Flutter & Dart
+| 🔐 Authentication | 🏠 Home & Search | ➕ Manage Data |
+| :---: | :---: | :---: |
+| ![Auth](screenshots/1.png) | ![Home](screenshots/4.png) | ![Add](screenshots/7.png) |
+| ![Setup](screenshots/2.png) | ![Search](screenshots/5.png) | ![Edit](screenshots/9.png) |
 
-State Management: Flutter BLoC / Cubit
+---
 
-Local Persistence: Shared Preferences (JSON String Caching)
+## 🛠️ Architecture & Tech Stack
 
+*   **Framework:** Flutter & Dart
+*   **State Management:** Flutter BLoC / Cubit
+*   **Local Persistence:** Shared Preferences (JSON String Caching)
+
+---
 📁 Codebase Structure
 The project follows a clean, decoupled layer approach:
 
@@ -43,6 +54,7 @@ lib/
 ├── logic/                 
 │   └── textField.dart     
 └── main.dart              
+
 📦 Dependencies Used
 Here are the core packages utilized in this production:
 
