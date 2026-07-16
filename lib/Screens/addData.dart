@@ -43,7 +43,7 @@ class _AddDataState extends State<AddData> {
                       children: [
                         SizedBox(height: ScreenHieght * 0.02),
                         Text(
-                          "Adding Entry",
+                          "Adding Email",
                           textAlign: TextAlign.left,
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
@@ -53,7 +53,7 @@ class _AddDataState extends State<AddData> {
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         Textfield(
-                          hintText: "Enter email Of Value",
+                          hintText: "name",
                           isPassword: false,
                           myController: name,
                         ),
@@ -63,7 +63,7 @@ class _AddDataState extends State<AddData> {
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         Textfield(
-                          hintText: "Enter Name Of Value",
+                          hintText: "email",
                           isPassword: false,
                           myController: email,
                         ),
@@ -73,7 +73,7 @@ class _AddDataState extends State<AddData> {
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         Textfield(
-                          hintText: "Enter password Of Value",
+                          hintText: "password",
                           isPassword: true,
                           myController: password,
                         ),

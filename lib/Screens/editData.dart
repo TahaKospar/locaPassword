@@ -60,7 +60,7 @@ class _EditDataState extends State<EditData> {
                       children: [
                         SizedBox(height: ScreenHieght * 0.02),
                         Text(
-                          "Adding Entry",
+                          "Edit email",
                           textAlign: TextAlign.left,
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
@@ -70,7 +70,7 @@ class _EditDataState extends State<EditData> {
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         Textfield(
-                          hintText: "Enter email Of Value",
+                          hintText: "name",
 
                           isPassword: false,
                           myController: name,
@@ -81,7 +81,7 @@ class _EditDataState extends State<EditData> {
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         Textfield(
-                          hintText: "Enter Name Of Value",
+                          hintText: "email",
                           isPassword: false,
                           myController: email,
                         ),
@@ -91,7 +91,7 @@ class _EditDataState extends State<EditData> {
                           style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                         Textfield(
-                          hintText: "Enter password Of Value",
+                          hintText: "password",
                           isPassword: true,
                           myController: password,
                         ),
@@ -120,7 +120,7 @@ class _EditDataState extends State<EditData> {
                                     }
                                   },
                                   child: Text(
-                                    "Edit Account",
+                                    "Edit email",
                                     style: TextStyle(color: Colors.black),
                                   ),
                                 ),
